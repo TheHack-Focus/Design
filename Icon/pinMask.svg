@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-icon_-_mask);
+      }
+
+      .cls-2 {
+        fill: #009bff;
+      }
+
+      .cls-3 {
+        fill: #fff;
+        stroke: #009bff;
+        stroke-width: 5px;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+
+      .cls-5 {
+        fill: none;
+      }
+
+      .cls-6 {
+        filter: url(#Path_1);
+      }
+    </style>
+    <filter id="Path_1" x="72.042" y="32.296" width="111.049" height="153.272" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.463"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-icon_-_mask">
+      <rect width="256" height="256"/>
+    </clipPath>
+  </defs>
+  <g id="icon_-_mask" data-name="icon - mask" class="cls-1">
+    <g id="Group_5" data-name="Group 5" transform="translate(-22 -4)">
+      <g id="Group_4" data-name="Group 4" transform="translate(103.042 42.296)">
+        <g id="baseline-location_on-24px" transform="translate(0 0)">
+          <g class="cls-6" transform="matrix(1, 0, 0, 1, -81.04, -38.3)">
+            <path id="Path_1-2" data-name="Path 1" class="cls-2" d="M51.525,2C25.8,2,5,23.17,5,49.345c0,35.509,46.525,87.927,46.525,87.927S98.049,84.854,98.049,49.345C98.049,23.17,77.246,2,51.525,2Zm0,64.254A16.912,16.912,0,1,1,68.141,49.345,16.77,16.77,0,0,1,51.525,66.254Z" transform="translate(76.04 36.3)"/>
+          </g>
+        </g>
+        <path id="Path_2" data-name="Path 2" class="cls-2" d="M0,0H61.63V50.681H0Z" transform="translate(18.898 18.823)"/>
+      </g>
+    </g>
+    <g id="avatar" class="cls-3" transform="translate(81 38)">
+      <ellipse class="cls-4" cx="46.5" cy="47.5" rx="46.5" ry="47.5"/>
+      <ellipse class="cls-5" cx="46.5" cy="47.5" rx="44" ry="45"/>
+    </g>
+  </g>
+</svg>
