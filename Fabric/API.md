@@ -99,4 +99,37 @@ There are some constraints in cards:
 - Media Type (`type`) should be one of `Images`, `Videos` or `LinkCards`.
 - **Location** must present. Otherwise the card will be ignored.
 
+### Post a card
 
+- Endpoint: `/Stream/Add`
+- Method: POST
+
+Post a card, but `timeStamp` and `publisher` are not required.
+
+#### Return
+
+- HTTP 200 (OK) will be returned upon successful requests. A JSON array of cards will be included in the body. Failed responses will return HTTP 400/401/404/451/500 accordingly. For the sake of documentation, an example response for a failed request is shown below.
+
+    HTTP/1.1 400 Bad Request
+    ...
+    ...
+    ...
+
+    {
+        "message": "Invalid request, location is missing"
+    }
+
+### Get card stream
+
+- Endpoint: `/Stream/Live`
+- Method: GET
+
+#### Required Parameters
+
+- Latitude: `lat` (in decimal degrees)
+- Longtitude: `lon` (in decimal degrees)
+- Radius: `radius` (in meters)
+
+#### Optional Parameters
+
+- Epoch: `epoch` (send ISO format time stamp) to retrieve more cards.
