@@ -1,45 +1,19 @@
 # API Specification
 
-Rev. 1.1
+Rev. 1.2
 
 All entities encoded in requests and responses should be formatted in JSON unless explicitly specified.
 
 ## Account Management
 
-### Register
-
-- Endpoint: `/Account/Register`
-- Method: POST
-
-#### Required Parameters
-
-- Email: `email`
-- User name: `username`
-- Password: `password`
-- SecureElementPublicKey: `secureElementPublicKey`, reserved for further use.
-
-#### Return
-
-- HTTP 200 (OK) will be returned upon successful requests.
-- Otherwise, the API returns HTTP 400 (Bad request) with an error message payload. An example response for a failed request is shown below.
-
-    HTTP/1.1 400 Bad Request
-    ...
-    ...
-    ...
-
-    {
-        "message": "Weak password detected."
-    }
-
-### Login
+### Login Or Register
 
 - Endpoint: `/Account/Login`
 - Method: POST
 
 #### Required Parameters
 
-- Login Handle: `loginHandle`
+- Login Handle: `login`
 - Password: `password`
 - SecureElementPublicKey: `secureElementPublicKey`, reserved for further use.
 
@@ -80,7 +54,7 @@ Message card is a JSON schema for messages in the application. An example of mes
                 "https://example.com/image1.mp4",
                 "https://example.com/image2.mp4"
             ],
-            "linkCards": {
+            "linkCard": {
                     "title": "Twitter",
                     "preview": "现在的程序员怎么不测试的……",
                     "url": "https://twitter.com/tualatrix/status/1020541670587109377"
