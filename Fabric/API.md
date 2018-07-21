@@ -21,7 +21,16 @@ All entities encoded in requests and responses should be formatted in JSON unles
 #### Return
 
 - HTTP 200 (OK) will be returned upon successful requests.
-- Otherwise, the API returns HTTP 400 (Bad request) with an error message payload.
+- Otherwise, the API returns HTTP 400 (Bad request) with an error message payload. An example response for a failed request is shown below.
+
+    HTTP/1.1 400 Bad Request
+    ...
+    ...
+    ...
+
+    {
+        "message": "Weak password detected."
+    }
 
 ### Login
 
@@ -36,7 +45,16 @@ All entities encoded in requests and responses should be formatted in JSON unles
 
 #### Return
 
-- HTTP 200 (OK) will be returned upon successful requests. An authentication token as well as refresh token, will be returned in body content. You can ignore it since everything is assumed in the hackathon.
+- HTTP 200 (OK) will be returned upon successful requests. An authentication token as well as refresh token, will be returned in body content. You can ignore it since everything is assumed in the hackathon. For the sake of documentation, an example response for a failed request is shown below.
+
+    HTTP/1.1 400 Bad Request
+    ...
+    ...
+    ...
+
+    {
+        "message": "Invalid password."
+    }
 
 ## Message Queue
 
@@ -61,13 +79,11 @@ Message card is a JSON schema for messages in the application. An example of mes
                 "https://example.com/image1.mp4",
                 "https://example.com/image2.mp4"
             ],
-            "linkCards": [
-                {
+            "linkCards": {
                     "title": "Twitter",
                     "preview": "现在的程序员怎么不测试的……",
                     "url": "https://twitter.com/tualatrix/status/1020541670587109377"
-                }
-            ]
+            }
         },
         "location": {
             "lat": 37.733795,
@@ -82,3 +98,5 @@ There are some constraints in cards:
 - Typically, only one type of media node will be presented.
 - Media Type (`type`) should be one of `Images`, `Videos` or `LinkCards`.
 - **Location** must present. Otherwise the card will be ignored.
+
+
