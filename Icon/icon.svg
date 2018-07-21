@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-icon);
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #ff4c3b;
+      }
+
+      .cls-4 {
+        fill: #ffd034;
+      }
+
+      .cls-5 {
+        fill: #0072bb;
+      }
+    </style>
+    <clipPath id="clip-icon">
+      <rect width="256" height="256"/>
+    </clipPath>
+  </defs>
+  <g id="icon" class="cls-1">
+    <rect id="Rectangle_1" data-name="Rectangle 1" class="cls-2" width="256" height="256" rx="27"/>
+    <g id="Group_5" data-name="Group 5" transform="translate(-22 -4)">
+      <g id="Group_2" data-name="Group 2" transform="translate(156.865 36.16) rotate(20)">
+        <rect id="Rectangle_2" data-name="Rectangle 2" class="cls-3" width="54.995" height="50.681" transform="translate(16.863 18.823)"/>
+        <g id="baseline-location_on-24px" transform="translate(0)">
+          <path id="Path_1" data-name="Path 1" class="cls-3" d="M41.516,0C18.563,0,0,21.17,0,47.345c0,35.509,41.516,87.927,41.516,87.927S83.031,82.854,83.031,47.345C83.031,21.17,64.468,0,41.516,0Zm0,64.254c-8.184,0-14.827-7.575-14.827-16.909s6.642-16.909,14.827-16.909,14.827,7.575,14.827,16.909S49.7,64.254,41.516,64.254Z" transform="translate(0 0)"/>
+        </g>
+      </g>
+      <g id="Group_3" data-name="Group 3" transform="translate(64.231 64.558) rotate(-20)">
+        <rect id="Rectangle_2-2" data-name="Rectangle 2" class="cls-4" width="54.995" height="50.681" transform="translate(16.863 18.823)"/>
+        <g id="baseline-location_on-24px-2" data-name="baseline-location_on-24px" transform="translate(0)">
+          <path id="Path_1-2" data-name="Path 1" class="cls-4" d="M41.516,0C18.563,0,0,21.17,0,47.345c0,35.509,41.516,87.927,41.516,87.927S83.031,82.854,83.031,47.345C83.031,21.17,64.468,0,41.516,0Zm0,64.254c-8.184,0-14.827-7.575-14.827-16.909s6.642-16.909,14.827-16.909,14.827,7.575,14.827,16.909S49.7,64.254,41.516,64.254Z" transform="translate(0)"/>
+        </g>
+      </g>
+      <g id="Group_4" data-name="Group 4" transform="translate(108.042 42.296)">
+        <rect id="Rectangle_2-3" data-name="Rectangle 2" class="cls-5" width="54.995" height="50.681" transform="translate(16.863 18.823)"/>
+        <g id="baseline-location_on-24px-3" data-name="baseline-location_on-24px" transform="translate(0 0)">
+          <path id="Path_1-3" data-name="Path 1" class="cls-5" d="M46.516,2C23.563,2,5,23.17,5,49.345c0,35.509,41.516,87.927,41.516,87.927S88.031,84.854,88.031,49.345C88.031,23.17,69.468,2,46.516,2Zm0,64.254c-8.184,0-14.827-7.575-14.827-16.909s6.642-16.909,14.827-16.909,14.827,7.575,14.827,16.909S54.7,66.254,46.516,66.254Z" transform="translate(-5 -2)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
