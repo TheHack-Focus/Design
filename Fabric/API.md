@@ -1,6 +1,6 @@
 # API Specification
 
-Rev. 1.0
+Rev. 1.1
 
 All entities encoded in requests and responses should be formatted in JSON unless explicitly specified.
 
@@ -64,6 +64,7 @@ Message card is a JSON schema for messages in the application. An example of mes
 
     {
         "timeStamp: "2018-07-20T23:21:39.1153429-07:00",
+        "id": "3b4c088f-8ff9-4ed2-8a00-ca71254ea6d2",
         "publisher": {
             "userId": "e2773914-8767-40fa-9f75-f63bb2885974",
             "userName": "John Appleseed"
@@ -133,3 +134,12 @@ Post a card, but `timeStamp` and `publisher` are not required.
 #### Optional Parameters
 
 - Epoch: `epoch` (send ISO format time stamp) to retrieve more cards.
+
+### Get a single card
+
+- Endpoint: `/Stream/Live/{Card ID}`
+- Method: GET
+
+#### Return
+
+- HTTP 200 (OK) will be returned upon successful requests. A card will be included in the body. Failed responses will return HTTP 400/401/404/451/500 accordingly.
